@@ -1,0 +1,18 @@
+<% @projects.each do |project| %>
+  <div class="row mannaka">
+    <div class="col s8">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg">
+          <span class="card-title"><%= project.title %></span>
+        </div>
+        <div class="card-content">
+          <p><%= project.details %></p>
+        </div>
+        <div class="card-action">
+          <a href="/project/<%= project.id %>">詳細</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

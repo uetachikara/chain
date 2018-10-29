@@ -1,0 +1,27 @@
+<%= form_for(@project, url: project_index_path) do |f| %>
+  <div class="row">
+    <div class="">主催者：<%= current_user.name %></div>
+    <div class="input-field col s6">
+      <%= f.text_field :title ,placeholder: "タイトル" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_field :details ,placeholder: "詳細文" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      画像アップロード
+      <%= f.file_field :photo, placeholder: "画像アップロード" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="">必要信頼度</div>
+    <%= f.text_field :required_reliability, class: "input-field col s1", type: "number" %>
+    </input>
+  </div>
+  <div class="row">
+    <%= f.submit "送信", class: "btn btn-primary withripple green accent-3" %>
+  </div>
+<% end %>
