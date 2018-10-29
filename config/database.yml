@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: chain_production
+  database: mysql2
   username: chain
   password: <%= ENV['CHAIN_DATABASE_PASSWORD'] %>
