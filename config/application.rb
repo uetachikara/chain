@@ -24,5 +24,5 @@ module Chain
     config.active_record.raise_in_transactional_callbacks = true
 
   end
-  config.assets.initialize_on_precompile = false
+  # config.assets.initialize_on_precompile = false #付け加えた
 end
