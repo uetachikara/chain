@@ -54,3 +54,7 @@ gem 'twitter-bootstrap-rails', '3.2.2'
 gem 'bootstrap-material-design', '0.1.4'
 #gem 'materialize-sass'
 
+group :production do
+  gem 'rails_12factor'
+end
+
